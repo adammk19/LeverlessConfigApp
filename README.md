@@ -2,6 +2,8 @@
 
 Application built to go with the hall effect leverless controller.
 
+Download: https://github.com/adammk19/LeverlessConfigApp/releases
+
 ### Features
 - Adjust individual button actuation points
 - Change between Rapid Trigger, Continuous Rapid Trigger and standard actuation modes
