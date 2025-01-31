@@ -144,6 +144,7 @@ namespace Rapid_Trigger_Config
             Calibrate();
             CalibrationForm calibrationForm = new CalibrationForm();
             calibrationForm.ShowDialog();
+            LoadSettings();
         }
 
 
