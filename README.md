@@ -26,4 +26,4 @@ My personal settings:
 
 Firmware repo: https://github.com/adammk19/LeverlessFirmware
 
-PCB & Case repo: TBA
+PCB & Case repo: https://github.com/adammk19/LeverlessPCB
