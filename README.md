@@ -24,6 +24,6 @@ My personal settings:
 
 ## Project
 
-Firmware repo: https://github.com/adammk19/LeverlessFirmware
+Firmware repo: https://github.com/adammk19/LeverlessFirmware (private)
 
-PCB & Case repo: https://github.com/adammk19/LeverlessPCB
+PCB & Case repo: https://github.com/adammk19/LeverlessPCB (private)
