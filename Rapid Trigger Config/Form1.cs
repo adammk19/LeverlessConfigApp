@@ -31,6 +31,11 @@ namespace Rapid_Trigger_Config
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            SerialPort1.NewLine = "\r\n";
+            SerialPort1.ReadTimeout = 5000;
+            SerialPort1.RtsEnable = true;
+            SerialPort1.DtrEnable = true;
+
             if (!IsDeviceConnected)
             {
                 this.Hide();
@@ -39,12 +44,6 @@ namespace Rapid_Trigger_Config
 
             barActuationPoint.Scroll += new EventHandler(Slider_Scroll);
             barRTSensitivity.Scroll += new EventHandler(Slider_Scroll);
-
-            SerialPort1.NewLine = "\r\n";
-            SerialPort1.ReadTimeout = 1000;
-            SerialPort1.RtsEnable = true;
-            SerialPort1.DtrEnable = true;
-
         }
 
         private void ShowConnectDeviceForm()
@@ -513,14 +512,23 @@ namespace Rapid_Trigger_Config
                     {
                         
                         SerialPort1.PortName = port;
+
                         SerialPort1.Open();
-                        IsDeviceConnected = true;
-                        this.Show();
-                        HideConnectDeviceForm();
-                        PopulateCboRTMode();
-                        LoadSettings();
-                        InitialLoad = true;
-                        break;
+
+                        if (ValidateDevice())
+                        {
+                            IsDeviceConnected = true;
+                            this.Show();
+                            HideConnectDeviceForm();
+                            PopulateCboRTMode();
+                            LoadSettings();
+                            InitialLoad = true;
+                            break;
+                        }
+                        else
+                        {
+                            SerialPort1.Close();
+                        }
                     }
                     catch
                     {
@@ -533,6 +541,24 @@ namespace Rapid_Trigger_Config
                     ShowConnectDeviceForm();
                 }
             }
+        }
+
+        private bool ValidateDevice()
+        {
+            try
+            {
+                SerialPort1.WriteLine("checkconnection");
+                Console.WriteLine($"Sent command: checkconnection");
+                string response = SerialPort1.ReadLine();
+                Console.WriteLine("Serial Response: " + response);
+                return true;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"error: {ex.Message}");
+                return false;
+            }
+
         }
 
         #endregion

@@ -54,8 +54,6 @@
             this.btnSelectAll = new System.Windows.Forms.Button();
             this.btnRemoveSelection = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.SerialPort1 = new System.IO.Ports.SerialPort(this.components);
             this.btnUp = new Rapid_Trigger_Config.RoundButtonControl();
             this.btnA = new Rapid_Trigger_Config.RoundButtonControl();
             this.btnB = new Rapid_Trigger_Config.RoundButtonControl();
@@ -68,6 +66,8 @@
             this.btnRight = new Rapid_Trigger_Config.RoundButtonControl();
             this.btnDown = new Rapid_Trigger_Config.RoundButtonControl();
             this.btnLeft = new Rapid_Trigger_Config.RoundButtonControl();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.SerialPort1 = new System.IO.Ports.SerialPort(this.components);
             this.panel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.barActuationPoint)).BeginInit();
@@ -455,25 +455,6 @@
             this.panel4.Size = new System.Drawing.Size(1140, 364);
             this.panel4.TabIndex = 9;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(38, 17);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1066, 332);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 8;
-            this.pictureBox1.TabStop = false;
-            // 
-            // SerialPort1
-            // 
-            this.SerialPort1.ReadTimeout = 5000;
-            // 
             // btnUp
             // 
             this.btnUp.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -689,6 +670,25 @@
             this.btnLeft.Text = "0.0";
             this.btnLeft.UseVisualStyleBackColor = false;
             this.btnLeft.Click += new System.EventHandler(this.btnLeft_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(38, 17);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(1066, 332);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 8;
+            this.pictureBox1.TabStop = false;
+            // 
+            // SerialPort1
+            // 
+            this.SerialPort1.ReadTimeout = 5000;
             // 
             // Form1
             // 
