@@ -551,7 +551,16 @@ namespace Rapid_Trigger_Config
                 Console.WriteLine($"Sent command: checkconnection");
                 string response = SerialPort1.ReadLine();
                 Console.WriteLine("Serial Response: " + response);
-                return true;
+                if (response == "connected")
+                {
+                    Console.WriteLine("Device validated.");
+                    return true;
+                }
+                else
+                {
+                    Console.WriteLine("Invalid device");
+                    return false;
+                }
             }
             catch (Exception ex)
             {
