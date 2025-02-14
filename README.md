@@ -18,7 +18,7 @@ If you're new to Rapid Trigger and HE key switch devices, I recommend the follow
 - RT Sensitivity of 0.3mm which you can then lower down to 0.1mm or 0.2mm (more forgiving) once you get comfortable with RT
 
 My personal settings:
-- 1.8mm actuation point on all buttons
+- 0.7mm actuation point on movement buttons, 1.8mm actuation point on action buttons
 - Continuous Rapid Trigger
 - 0.1mm RT Sensitivity
 
