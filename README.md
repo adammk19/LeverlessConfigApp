@@ -10,6 +10,9 @@ Download: https://github.com/adammk19/LeverlessConfigApp/releases
 - Adjust Rapid Trigger sensitivity
 - Calibrate sensors
 
+![image](https://github.com/user-attachments/assets/6d88985c-5a43-4a2f-b363-18a73f806a52)
+
+
 ### Recommendations
 
 If you're new to Rapid Trigger and HE key switch devices, I recommend the following settings so you can get over the learning curve quickly:
