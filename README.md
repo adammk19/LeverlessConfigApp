@@ -2,6 +2,8 @@
 
 Application built to go with the hall effect leverless controller.
 
+Store: https://hyperstrike.ca/
+
 Download: https://github.com/adammk19/LeverlessConfigApp/releases
 
 ### Features
